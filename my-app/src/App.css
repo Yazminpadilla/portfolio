@@ -1,0 +1,65 @@
+.App {
+  display: flex;        /* This will enable Flexbox layout */
+  flex-direction: column; /* This ensures that children of .App stack vertically */
+  align-items: center;  /* This will horizontally center direct children */
+  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: #b2967d;
+}
+.Header { /* Assuming the root element in your Header component has a class of 'Header'. If not, you'd have to adjust accordingly. */
+  height: 10vh;
+}
+
+.headerWord {
+  color: #e7d8c9;
+  font-size: 12px;
+}
+
+.headerList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;  /* Positioning the list absolutely. */
+  top: 10px;           /* Distance from the top of the page. Adjust as needed. */
+  right: 10px;         /* Distance from the right of the page. Adjust as needed. */
+  text-align: right;   /* Aligning the text to the right. */
+}
+
+
+.headerList li {
+  display: inline-block;  /* This makes the list items display horizontally. */
+  margin-right: 20px;  /* This adds spacing between the list items. Adjust as needed. */
+}
+
+.headerNumber {
+  color: #d81e5b;  /* Your desired color for the numbers. */
+  font-size: 12px;
+  font-family: Monaco, monospace;
+
+}
+.intro-box h1, 
+.intro-box h2, 
+.intro-box h3, 
+.intro-box h5 {
+    margin-top: 10px;     /* Adjust this value to increase or decrease the space from the top. */
+    margin-bottom: 10px;  /* Adjust this value to increase or decrease the space from the bottom. */
+}
+.introHi{
+  color: #d81e5b;  /* Your desired color for the numbers. */
+  font-size: 14px;
+  font-family: Monaco, monospace;
+}
+.intro-box {
+  text-align: left;
+  padding-left: 20px;
+  width: 60%;           
+  margin-top: 50px;    /* This will add a 50px space between the Header and the intro-box. Adjust the value as necessary. */
+}
+
+.name{
+  color: #eee4e1;
+}
+.intro-bio{
+  color: #e7d8c9;
+}
