@@ -1,19 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  display: flex;        /* This will enable Flexbox layout */
-  flex-direction: column; /* This ensures that children of .App stack vertically */
-  align-items: center;  /* This will horizontally center direct children */
-  height: 100vh;
+  display: flex;        
+  flex-direction: column; 
+  align-items: center;  
   min-height: 100vh;
   overflow-y: auto;
   background-color: #b2967d;
+  padding-top: 60px;
 }
 .Header { /* Assuming the root element in your Header component has a class of 'Header'. If not, you'd have to adjust accordingly. */
-  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;    /* Make it span the entire width of the viewport */
+  z-index: 1000;  /* Ensure it appears above all other content */
+  background-color: #b2967d; /* Set a background color for your header. Adjust this to your needs. */
+  padding: 30px 0; /* Optional padding to give some vertical spacing */
 }
+
 
 .headerWord {
   color: #e7d8c9;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .headerList {
@@ -31,10 +43,20 @@
   display: inline-block;  /* This makes the list items display horizontally. */
   margin-right: 20px;  /* This adds spacing between the list items. Adjust as needed. */
 }
+.headerList a {
+  text-decoration: none; /* This will remove the underline */
+  color: inherit; /* This will ensure the link uses the color of the surrounding text by default */
+}
+.headerList a:hover {
+  background-color: #220901; /* Similar to your sidebar hover color */
+  color: white; /* Change the font color on hover */
+  border-radius: 7px; /* Optional, adds rounded corners to the hover effect */
+  padding: 2px 6px; /* Optional, adds some space around the text inside the link during hover */
+}
 
 .headerNumber {
   color: #d81e5b;  /* Your desired color for the numbers. */
-  font-size: 12px;
+  font-size: 13px;
   font-family: Monaco, monospace;
 
 }
@@ -46,7 +68,7 @@
     margin-bottom: 10px;  /* Adjust this value to increase or decrease the space from the bottom. */
 }
 .introHi{
-  color: #d81e5b;  /* Your desired color for the numbers. */
+  color: #d81e5b;  
   font-size: 14px;
   font-family: Monaco, monospace;
 }
@@ -56,10 +78,122 @@
   width: 60%;           
   margin-top: 50px;    /* This will add a 50px space between the Header and the intro-box. Adjust the value as necessary. */
 }
-
 .name{
   color: #eee4e1;
 }
 .intro-bio{
-  color: #e7d8c9;
+  color: #220901;
 }
+.sidebar {
+  position: fixed; /* Makes the sidebar stick to the screen */
+  top: 25vh;
+  left: 0;
+  height: 50vh; /* 100% of the viewport height */
+  width: 50px; /* Adjust this as needed */
+  background-color: #b2967d; /* Any color you like */
+  overflow-x: hidden; /* No horizontal scroll */
+  padding-top: 20px; /* Adjust as needed */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar ul li a i {
+  font-size: 24px; 
+  color: white; 
+}
+
+
+.sidebar ul li a:hover {
+  background-color: #220901;
+  border-radius: 7px; /* Optional, adds rounded corners to the hover effect */
+}
+
+
+.about-box {
+  text-align: left;
+  padding-left: 20px;
+  width: 60%;           
+  margin-top: 90px;
+
+}
+.about-content {
+  display: flex;  /* Use Flexbox to layout child elements */
+  align-items: center; /* Vertically aligns the image and text in the middle */
+}
+
+.about-image {
+  width: 200px;  
+  height: 200px;  
+  margin-right: 20px; 
+  border-radius: 50%; 
+  object-fit: cover; /* This will make sure the image covers the whole area without distorting its aspect ratio */
+  border: 2px solid #d81e5b; 
+}
+.AboutMe{
+  color: #e7d8c9;
+  font-size: 25px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+.about-bio{
+  color: #220901;
+  font-size: 18px;
+}
+.experience-box {
+  text-align: left;
+  padding-left: 20px;
+  width: 60%;           
+  margin-top: 125px;
+}
+
+.job {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  color: #666;
+  font-style: italic;
+}
+
+.job-date {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+
