@@ -2,8 +2,8 @@ import '../App.css';
 
 function Exper() {
     return (
-      <div className="experience-box">
-         <h2 style={{color:"#e7d8c9"}}>Experience</h2>
+      <div className='experbox2'>
+         <h2 style={{color:"#e7d8c9", fontSize:"28px"}}>Experience</h2>
         <div className="job">
           <h4>Stanford University, Stanford, CA</h4>
           <p className="job-title">Section Leader/ Teaching Assistant for CS105</p>
