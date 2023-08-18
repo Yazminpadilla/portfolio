@@ -6,12 +6,12 @@ function Sidebar() {
     <div className="sidebar">
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/yazmin-padilla/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:yazminpadilla2001@gmail.com" target="_blank" rel="noopener noreferrer">
             <i className="fas fa-envelope"></i>
           </a>
         </li>
