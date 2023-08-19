@@ -16,7 +16,7 @@ function Sidebar() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Yazminpadilla" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
         </li>
