@@ -22,6 +22,7 @@ function Work() {
                 <p className="project-date">Project Team Member - June 2023</p>
                 <div className="video-container">
                     <iframe 
+                        title="Predictive photo"
                         src="https://drive.google.com/file/d/1mf66sg9YL74-5S_xkslw-hKf9u9azxQX/preview" 
                         width="640" 
                         height="480">
@@ -43,6 +44,7 @@ function Work() {
                 <p className="project-date">Project Team Member - January 2023 - April 2023</p>
                 <div className="video-container">
                     <iframe 
+
                         style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
                         width="800" 
                         height="450" 
