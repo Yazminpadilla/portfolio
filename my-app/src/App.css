@@ -283,4 +283,9 @@
 .project-link:hover {
   color: #b01548;
 }
+.volunteer-box {
+  text-align: left;
+  padding: 20px;
+  width: 60%;       
+}
 

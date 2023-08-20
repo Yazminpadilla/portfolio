@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar';
 import About from './components/about';
 import Exper from './components/experience';
 import Work from './components/work';
+import Volunteering from './components/volunteering';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div id="work" className="work-box">
         <Work/>
+      </div>
+      <div id="Volunteer" className='volunteer-box'>
+        <Volunteering/>
       </div>
     </div>
   );
