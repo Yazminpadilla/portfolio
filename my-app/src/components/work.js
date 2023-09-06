@@ -6,6 +6,18 @@ function Work() {
             <h2 style={{color:"#e7d8c9", fontSize:"28px"}}>Work</h2>
 
             <div className="project">
+                <h4>CutLink</h4>
+                <p className="project-date">Current</p>
+                <a href="https://github.com/Yazminpadilla/CutLink" className="project-link">View on GitHub</a>
+
+                <ul>
+                    <li> Creating a url shorter that coverts long URLs into Short ones.</li>
+                    <li>The client was created using React JS.</li>
+                    <li>Server and database are Python Flask and Firebase Database.</li>
+                </ul>
+            </div>
+
+            <div className="project">
                 <h4>Website Portfolio</h4>
                 <p className="project-date">August 2023</p>
                 <a href="https://github.com/Yazminpadilla/portfolio/tree/main/my-app/src" className="project-link">View on GitHub</a>
